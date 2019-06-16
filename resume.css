@@ -7,7 +7,7 @@
 
 body {
   background-color: white;
-  max-width: 100vw;
+  height: 100vh;
   display: flex;
 }
  
@@ -23,6 +23,8 @@ aside {
   background-color: #3A3335;
   color: #eee;
   padding: 15px;
+  height: 100%;
+  width: 275px;
 }
 
 aside a {
@@ -48,8 +50,9 @@ hr {
 }
 
 main {
-  padding: 20px;
-  max-width: 800px;
+  padding: 0 20px;
+  width: 575px;
+  height: 100%;
 }
 
 main h3 {
