@@ -1,5 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Rokkitt', serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 body {
   height: 100vh;
   width: 100vw;
-  background: center / contain no-repeat url("./images/me.jpg");
+  display: flex;
+}
+
+nav {
+  background-color: #3A3335;
+  color: #eee;
+  padding: 15px;
+  height: 100%;
+  width: 190px;
+  position: fixed;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+
+.background {
+  position: absolute;
+  right: 0;
+  height: 100%;
 }
