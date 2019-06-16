@@ -9,9 +9,8 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
   display: flex;
+  height: 100vh;
 }
 
 nav {
@@ -19,18 +18,56 @@ nav {
   color: #eee;
   padding: 15px;
   height: 100%;
-  width: 190px;
-  position: fixed;
+  flex: 0 0 190px;
 }
 
 main {
-  position: relative;
-  height: 100%;
   flex: 1;
+  overflow-y: scroll;
+}
+
+a {
+  color: #eee;
+}
+
+.nav-li {
+  padding: 5px;
+  font-size: 1.5rem;
+  color: #eee;
+}
+
+.nav-li:hover {
+  border-left: 3px solid;
+}
+
+.red {
+  color: red !important;
+}
+
+.orange {
+  color: orange !important;
+}
+
+.yellow {
+  color: yellow !important;
+}
+
+.green {
+  color: green !important;
+}
+
+.blue {
+  color: blue !important;
+}
+
+.purple {
+  color: purple !important;
+}
+
+.white {
+  color: white !important;
 }
 
 .background {
-  position: absolute;
-  right: 0;
-  height: 100%;
+  width: 100%
 }
