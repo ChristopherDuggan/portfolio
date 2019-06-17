@@ -9,29 +9,55 @@
 }
 
 body {
-  display: flex;
   height: 100vh;
+  background-color: #3A3335;
 }
 
 nav {
-  background-color: #3A3335;
+  background-color: #252122;
   color: #eee;
   padding: 15px;
   height: 100%;
-  flex: 0 0 190px;
+  width: 230px;
+  position: fixed;
+}
+
+.logo {
+  padding: 30px 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid red;
+}
+
+.logo h1{
+  font-size: 2.5rem;
+}
+
+.logo h3 {
+  font-size: 1.5rem;
 }
 
 main {
-  flex: 1;
-  overflow-y: scroll;
+  padding-left: 230px;
 }
 
 a {
   color: #eee;
 }
 
+blockquote {
+  border-left: 3px solid;
+  font-size: 2rem;
+  margin: 35px 0;
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
 .nav-li {
-  padding: 5px;
+  padding: 10px;
   font-size: 1.5rem;
   color: #eee;
 }
@@ -41,33 +67,58 @@ a {
 }
 
 .red {
-  color: red !important;
+  color: red;
 }
 
 .orange {
-  color: orange !important;
+  color: orange;
 }
 
 .yellow {
-  color: yellow !important;
+  color: yellow;
 }
 
 .green {
-  color: green !important;
+  color: green;
 }
 
 .blue {
-  color: blue !important;
+  color: blue;
 }
 
 .purple {
-  color: purple !important;
+  color: purple;
 }
 
 .white {
-  color: white !important;
+  color: white;
 }
 
 .background {
   width: 100%
+}
+
+.container {
+  width: 95%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#intro {
+  background-color: red;
+}
+
+section h1 {
+  color: #eee;
+  font-size: 3rem;
+  padding: 10px 0 30px 15px;
+}
+
+#about h1 {
+  background: red;
+}
+
+#experience h1 {
+  background: orange;
 }
