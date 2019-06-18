@@ -191,6 +191,26 @@ section h1 {
   height: 200px;
 }
 
+.skill-container{
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  text-align: center;
+  flex-grow: 1;
+  width: 24%;
+  height: 200px;
+  padding: 20px 0;
+  margin: 10px 20px;
+  border: solid 1px black;
+}
+
+.skill-icon {
+  width: 100px;
+}
+
 #about h1 {
   background: rgba(255, 0, 0, 0.6);
 }
