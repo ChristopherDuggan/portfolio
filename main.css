@@ -51,6 +51,10 @@ main {
   padding-left: 250px;
 }
 
+h2 {
+  font-size: 2rem; 
+}
+
 a {
   color: #eee;
 }
@@ -117,18 +121,18 @@ p {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.exp-card {
+.card {
   max-width: 800px;
   margin: 40px auto;
   padding: 10px;
   border: solid black 1px;
 }
 
-.exp-card p {
+.card p {
   font-size: 1rem;
 }
 
-.exp-header {
+.card-header {
   border-bottom: 1px solid black;
   margin: 0 20px;
   display: flex; 
@@ -138,25 +142,35 @@ p {
   padding-left: 10px;
 }
 
-.exp-header h2 {
-  font-size: 2rem; 
+.project-card-header {
+  border-bottom: 1px solid black;
+  margin: 0 20px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
-
-.exp-header-text {
+.card-header-text {
   text-align: right;
 }
 
-.exp-header-text p {
+.card-header-text p {
   padding: 0;
   font-weight: 900;
   font-size: 1.3rem;
 }
 
-.exp-content {
+.project-card-header-text {
+  width: 70%;
+  text-align: right;
+}
+
+.card-content {
   padding: 10px 0 30px 0;
 }
 
-.exp-content ul {
+.card-content ul {
   margin: 0 auto;
   width: 90%;
   list-style: disc;
@@ -167,6 +181,14 @@ section h1 {
   color: #eee;
   font-size: 3rem;
   padding: 20px 0 0 20px;
+}
+
+.icon {
+  height: 60px;
+}
+
+.project-img {
+  height: 200px;
 }
 
 #about h1 {
@@ -197,4 +219,8 @@ section h1 {
 #contact h1 {
   border-left: 75px solid purple;
   border-bottom: 5px solid purple;
+}
+
+#mtg-logo {
+  border-radius: 50%;
 }

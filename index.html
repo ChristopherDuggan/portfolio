@@ -50,15 +50,15 @@
       <section id="experience">
         <h1>Experience</h1>
         <div class="container">
-          <div class="exp-card">
-            <div class="exp-header">
+          <div class="card">
+            <div class="card-header">
               <img src="./images/general-assembly-logo.png" alt="General Assembly">
-              <div class="exp-header-text">
+              <div class="card-header-text">
                 <h2>General Assembly</h2>
-                <p>Jr. Front-End Developer</p>
+                <p>Jr. Front End Developer</p>
               </div>
             </div>
-            <div class="exp-content">
+            <div class="card-content">
               <ul>
                 <li>
                   Built text-based reminder application to improve user organization using Node.js, React.js, Express, and PostgreSQL
@@ -73,15 +73,15 @@
             </div>
             <p>March 2019 to June 2019 | New York, NY</p>
           </div>
-          <div class="exp-card">
-            <div class="exp-header">
+          <div class="card">
+            <div class="card-header">
               <img src="./images/per-scholas-logo.png" alt="Per Scholas">
-              <div class="exp-header-text">
+              <div class="card-header-text">
                 <h2>Per Scholas</h2>    
-                <p>Front-End Development Fellow</p>
+                <p>Front End Development Fellow</p>
               </div>
             </div>
-            <div class="exp-content">
+            <div class="card-content">
               <ul>
                 <li>
                   Designed and Deployed calculato rapplication with advanced mathematical functions using JavaScript, HTML, and CSS
@@ -96,15 +96,15 @@
             </div>
             <p>January 2019 to March 2019 | New York, NY</p>
           </div>
-          <div class="exp-card">
-            <div class="exp-header">
+          <div class="card">
+            <div class="card-header">
               <img src="./images/life-daily-logo.png" alt="Life Daily">
-              <div class="exp-header-text">
+              <div class="card-header-text">
                 <h2>Kaizen Media Group</h2>
                 <p>Content Generator</p>
               </div>
             </div>
-            <div class="exp-content">
+            <div class="card-content">
               <ul>
                 <li>
                   Researched and wrote ten articles a week on a wide range of subjects
@@ -118,15 +118,15 @@
               </ul> </div>
             <p>October 2017 to November 2018 | New York, NY</p>
           </div>
-          <div class="exp-card">
-            <div class="exp-header">
+          <div class="card">
+            <div class="card-header">
               <img src="./images/level-solar-logo.png" alt="Level Solar">
-              <div class="exp-header-text">
+              <div class="card-header-text">
                 <h2>Level Solar</h2>
                 <p>Sales Consultant</p>
               </div>
             </div>
-            <div class="exp-content">
+            <div class="card-content">
               <ul>
                 <li>
                   Generated leads through door to door interactions with homeowners
@@ -148,29 +148,100 @@
       <section id="projects">
         <h1>Projects</h1>
         <div class="container">
-          <blockquote class="yellow">
-            Thoughtful full-stack developer who loves solving problems, improving people's lives, and making things beautiful. 
-          </blockquote>
-          <p>
-           this is some sample text that I'm typing out because I need to see what it'll look like when I'm doing stuff on the page for real. This is taking too long to actually type meaningful words at the moment so in the next paragraph, I'll just type gibberish.' 
-          </p>
-          <p>
-            aheousna  heusacnhoeul acohusanoehkml'b,g 's,dusan ofg sa,hu sojhtZNAOT buasnotansouasnt dhs;ntoh ks-cedxhz;   xhsehuohe nsohes ohei-ohe-o eh-so th-kto heu- ohei- oeh-io he-o he- oe-ih oe-ti hoe-uthi o-et hioe''
-          </p>
+          <div class="card">
+            <div class="project-card-header">
+              <img src="./images/mtg-deckbuilder.png" alt="MTG.dec" class="project-img" id="mtg-logo">
+              <div class="project-card-header-text">
+                <h2>MTG.dec</h2>
+                <p>A simple search engine and deck building tool for the Magic: the Gathering card game</p>
+                <a href="https://chris-duggan-mtg-mvp.herokuapp.com/">
+                  <img src="./images/link.png" alt="visit site" title="visit site" class="icon">
+                </a>
+                <a href="https://github.com/ChristopherDuggan/mtg-deckbuilder">
+                  <img src="./images/github-logo.png" alt="Github" title="visit GitHub" class="icon">
+                </a>
+              </div>
+            </div>
+            <div class="card-content">
+              <h2>Achievments</h2>
+              <ul>
+                <li>React front end</li>
+                <li>Accesssed the <a href="https://magicthegathering.io/">MagicTheGathering.io</a> API</li>
+                <li>Implemented logic to account for multiple card printings</li>
+                <li>Full deck construction, editing, and storage</li>
+                <li>Implemented game rules in deck building limits</li>
+              </ul>
+              <h2>Next Steps:</h2>
+              <ul>
+                <li>Implement multiple pages for search queries with more than 100 results</li>
+                <li>Improve search functionality with regard to funky punctuation in card names</li>
+                <li>Implement advanced filtering by non-name card properties</li>
+                <li>Render saved decks using card art of the user's choosing</li>
+                <li>Implement responsive design for mobile users</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project-card-header">
+              <img src="./images/simple-minder.png" alt="Simple Minder" class="project-img">
+              <div class="project-card-header-text">
+                <h2>Simple Minder</h2>
+                <p>Set reminders to be sent to your phone as text messages</p>
+                <a href="https://github.com/ChristopherDuggan/SimpleMinder">
+                  <img src="./images/github-logo.png" alt="Github" title="visit GitHub" class="icon">
+                </a>
+              </div>
+            </div>
+            <div class="card-content">
+              <h2>Achievments</h2>
+              <ul>
+                <li>React front end with mobile-first design</li>
+                <li>PostgreSQL back end using </li>
+                <li>Implemented automated texting using <a href="https://nodemailer.com/about/">Nodemailer</a></li> 
+                <li>Database checked each minute to send all scheduled messages</li>
+              </ul>
+              <h2>Next Steps:</h2>
+              <ul>
+                <li>Implement two-step authentication and other measures to secure user data and prevent misuse</li>
+                <li>Implement automatic identification of phone service provider</li>
+                <li>Convert from React to React Native and deploy</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project-card-header">
+              <img src="./images/otoxa-comic.png" alt="Otoxa, Eye of the Universe" class="project-img">
+              <div class="project-card-header-text">
+                <h2>Otoxa, Eye of the Universe</h2>
+                <p>A website for a comic drawn by the wonderful <a href="http://www.rosshayesdesign.com/">Ross Hayes</a> and written by me</p>
+                <a href="https://github.com/ChristopherDuggan/otoxa">
+                  <img src="./images/github-logo.png" alt="Github" title="visit GitHub" class="icon">
+                </a>
+              </div>
+            </div>
+            <div class="card-content">
+              <h2>Achievments</h2>
+              <ul>
+                <li>Completely redesigned basic HTML site</li>
+                <li>Used JavaScript and CSS to create visually dynamic navigation assets</li>
+                <li>"Thought experiment" mockup store using local storage without JSON</li>
+              </ul>
+              <h2>Next Steps:</h2>
+              <ul>
+                <li>Overhaul site using React and React-Router</li>
+                <li>Implement keystroke navigation</li>
+                <li>Revisit styling for improved user experience</li>
+                <li>Redeploy site to standalone url</li>
+                <li>Write more!</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section id="skills">
         <h1>Skills</h1>
         <div class="container">
-          <blockquote class="red">
-            Thoughtful full-stack developer who loves solving problems, improving people's lives, and making things beautiful. 
-          </blockquote>
-          <p>
-           this is some sample text that I'm typing out because I need to see what it'll look like when I'm doing stuff on the page for real. This is taking too long to actually type meaningful words at the moment so in the next paragraph, I'll just type gibberish.' 
-          </p>
-          <p>
-            aheousna  heusacnhoeul acohusanoehkml'b,g 's,dusan ofg sa,hu sojhtZNAOT buasnotansouasnt dhs;ntoh ks-cedxhz;   xhsehuohe nsohes ohei-ohe-o eh-so th-kto heu- ohei- oeh-io he-o he- oe-ih oe-ti hoe-uthi o-et hioe''
-          </p>
+        
         </div>
       </section>
       <section id="education">
