@@ -63,7 +63,8 @@ blockquote {
   border-left: 3px solid;
   font-size: 2rem;
   color: red;
-  margin: 35px 0;
+  max-width: 1200px; 
+  margin: 35px auto;
   padding: 1rem;
 }
 
@@ -234,6 +235,13 @@ section h1 {
 #about h1 {
   background: rgba(255, 0, 0, 0.6);
 }
+
+#about p {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 
 #experience h1 {
   background:  rgba(255, 165, 0, 0.6);
