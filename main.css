@@ -25,6 +25,10 @@ nav {
   position: fixed;
 }
 
+nav a {
+  color: #eee;
+}
+
 h1 {
   letter-spacing: .04em;
 }
@@ -53,10 +57,6 @@ main {
 
 h2 {
   font-size: 2rem; 
-}
-
-a {
-  color: #eee;
 }
 
 blockquote {
@@ -122,7 +122,7 @@ p {
 }
 
 .card {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 40px auto;
   padding: 10px;
   border: solid black 1px;
@@ -164,6 +164,12 @@ p {
 .project-card-header-text {
   width: 70%;
   text-align: right;
+}
+
+.project-card-header-text p {
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 5px 0 20px 0;
 }
 
 .card-content {
@@ -209,6 +215,20 @@ section h1 {
 
 .skill-icon {
   width: 100px;
+}
+
+.education-flex {
+  display: flex;
+}
+
+.education-flex .card {
+  width: 25%;
+}
+
+
+.education-flex .card p {
+  font-size: 1.3rem;
+  font-weight: 900;
 }
 
 #about h1 {
