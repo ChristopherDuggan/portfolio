@@ -236,31 +236,34 @@ section h1 {
 }
 
 #experience h1 {
-  border-left: 75px solid orange;
-  border-bottom: 5px solid orange;
+  background:  rgba(255, 165, 0, 0.6);
 }
 
-
 #projects h1 {
-  border-left: 75px solid yellow;
-  border-bottom: 5px solid yellow;
+  background: rgba(0, 128, 0, 0.6);
 }
 
 #skills h1 {
-  border-left: 75px solid green;
-  border-bottom: 5px solid green;
+  background: rgba(0, 0, 255, 0.6);
 }
 
 #education h1 {
-  border-left: 75px solid blue;
-  border-bottom: 5px solid blue;
+  background: rgba(128, 0, 128, 0.6);
 }
 
 #contact h1 {
-  border-left: 75px solid purple;
-  border-bottom: 5px solid purple;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 #mtg-logo {
   border-radius: 50%;
+}
+
+#contact a {
+  display: flex;
+  align-items: center;
+}
+
+#contact h2 {
+  margin-left: 15px;
 }
