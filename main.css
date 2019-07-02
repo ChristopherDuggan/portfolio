@@ -15,13 +15,13 @@ body {
 ul {
   list-style: none;
 }
- 
+
 nav {
   background-color: #252122;
   color: #eee;
   padding: 15px;
   height: 100%;
-  width: 250px;
+  width: 240px;
   position: fixed;
 }
 
@@ -52,18 +52,18 @@ h3 {
 }
 
 main {
-  padding-left: 250px;
+  padding-left: 240px;
 }
 
 h2 {
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 
 blockquote {
   border-left: 3px solid;
   font-size: 2rem;
   color: red;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 35px auto;
   padding: 1rem;
 }
@@ -136,7 +136,7 @@ p {
 .card-header {
   border-bottom: 1px solid black;
   margin: 0 20px;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10px;
@@ -146,7 +146,7 @@ p {
 .project-card-header {
   border-bottom: 1px solid black;
   margin: 0 20px;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
