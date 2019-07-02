@@ -3,6 +3,7 @@
   margin: 0;
   text-decoration: none;
   font-family: 'Rokkitt', serif;
+  box-sizing: border-box;
 }
 
 body {
