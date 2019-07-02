@@ -10,7 +10,7 @@ body {
   height: 100vh;
   display: flex;
 }
- 
+
 ul {
   list-style: none;
 }
@@ -24,7 +24,7 @@ aside {
   color: #eee;
   padding: 15px;
   height: 100%;
-  width: 275px;
+  width: 225px;
 }
 
 aside a {
@@ -51,7 +51,7 @@ hr {
 
 main {
   padding: 0 20px;
-  width: 575px;
+  width: 625px;
   height: 100%;
 }
 
