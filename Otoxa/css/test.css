@@ -1,0 +1,119 @@
+/* ##########COLOR SCHEME##############
+#4464AD Slate-ey grey blue purple
+#44318D Light Purple
+#D83F87 PINK rgb(216,63,135)
+
+#2A1B3D Dark purple rgb(42,27,61)
+#A4B3B6 Blue
+#59cad7 rgb(89,202,215) Superlight Blue
+ */
+
+ /* Heading color: #D83F87 */
+ /* on hover color: #D83F87 */
+ /* link color: #4464AD */
+ /* followed link color: #5A6264 */
+ /* font color: #A4B3B6 */
+
+ /* another font https://fonts.google.com/specimen/Cinzel */
+
+body {
+  background-color: #140D1C;
+  color: #A4B3B6;
+  max-width: 1000px;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
+menu {
+  max-width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  /* background-color: #4464AD; */
+  list-style: none;
+  color: #44318D;
+  margin: 0;
+  padding: 0;
+}
+
+ul a {
+  text-decoration: none;
+  font-family: 'Inknut Antiqua';
+  font-size: 20pt;
+  color: #59CAD7;
+}
+
+ul li {
+  text-align: center;
+  background-color: rgba(68, 100, 173, .4);
+  border: 2px solid #59CAD7;
+  padding-left: 5px;
+  /* z-index: 110; */
+  transform: translateY(90px);
+  opacity: 0.6;
+}
+
+#eye {
+  position: absolute;
+  /* z-index: 100; */
+}
+
+h1, h3 {
+    font-family: 'Inknut Antiqua';
+    color: #D83F87;
+    text-align: left;
+}
+
+p {
+  font-family: 'Quattrocento';
+  margin: 0;
+  margin-top: 1em;
+  line-height: 1.5em;
+  font-size: 13pt;
+}
+
+.entry {
+  border-right: 5px groove  #4464AD;
+  border-bottom: 5px groove #4464AD;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.testBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one {
+  height: 100px;
+  width: 300px;
+  background-color: #4464AD;
+}
+
+.two {
+  height: 100px;
+  width: 300px;
+
+  color: #5A6264;
+}
+
+.three {
+  height: 100px;
+  width: 300px;
+  color: #D83F87;
+}
+
+.four {
+  height: 100px;
+  width: 300px;
+  color: #4464AD;
+  background-color: #2A1B3D;
+}
+
+.article {
+  background-color: #2A1B3D;
+  padding: 14px;
+}

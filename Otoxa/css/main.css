@@ -1,0 +1,668 @@
+/* ########## For navbar, use modal????? Credit: Laeeq ##########*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ body {
+   background-color: rgb(20,13,28);
+   color: rgb(164,179,182);
+   max-width: 1120px;
+   margin: 0 auto;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inknut Antiqua';
+  color: rgb(216,63,135);
+}
+
+p {
+  font-family: 'Quattrocento';
+  margin: 0;
+  margin-top: 1em;
+  line-height: 1.5em;
+  font-size: 13pt;
+}
+
+header {
+  position: relative;
+  height: 200px;
+  text-align: center;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  font-family: 'Inknut Antiqua';
+}
+input, button {
+  padding: 10px;
+  font-size: 12pt;
+  width: 90%;
+  outline: 0;
+  font-family: 'Quattrocento';
+  border: 0;
+  margin: 3px;
+}
+
+button:active, input:active {
+  background-color: rgb(68,100,173);
+}
+#topNav {
+  position: absolute;
+  left: 100px;
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  z-index: 101;
+}
+
+#topNav li{
+  /* opacity: 1; */
+  display: none;
+}
+
+#topNav li a {
+  text-decoration: none;
+  font-size: 40px;
+  position: absolute;
+  z-index: 110;
+  color: rgba(216,63,135,.6);
+  padding: 0 10px;
+  border: solid 2px rgba(216,63,135,.6);
+  border-radius: 20%;
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 1px #fff,
+               0 0 2px  #fff,
+               0 0 3px  #fff,
+               0 0 4px  #FF1177,
+               0 0 7px  #FF1177,
+               0 0 8px  #FF1177,
+               0 0 10px #FF1177,
+               0 0 15px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 3px #fff,
+               0 0 5px #fff,
+               0 0 17px #fff,
+               0 0 10px #FF1177,
+               0 0 17px #FF1177,
+               0 0 20px #FF1177,
+               0 0 25px #FF1177,
+               0 0 46px #FF1177;
+  }
+}
+
+
+/* positioning the nav buttons */
+#newsTop {
+  top: 30px;
+  left: 50px;
+  transform: rotate(-2deg);
+}
+
+#archTop {
+  top: 80px;
+  left: 40px;
+  transform: rotate(2deg);
+}
+
+#shopTop {
+  top: 130px;
+  left: 35px;
+  transform: rotate(4deg);
+}
+
+#aboutTop {
+  top: 180px;
+  left: 20px;
+  transform: rotate(6deg);
+}
+
+#creTop {
+  top: 230px;
+  left: 10px;
+  transform: rotate(9deg);
+
+}
+
+#conTop {
+  top: 280px;
+  left: -10px;
+  transform: rotate(12deg);
+}
+
+/* transition reveals the brighter image underneath */
+#eye1 {
+    transition: all .5s ease-in-out;
+    position: absolute;
+    z-index: 5;
+}
+
+#eye1a {
+  position: absolute;
+}
+
+#topHover:hover #eye1{
+  opacity: 0;
+}
+
+#topHover:hover #topNav {
+  opacity: 1;
+  height: 340px;
+  width: 200px;
+}
+
+#topHover:hover #topNav li{
+  display: block;
+}
+
+#logo {
+  flex: 1;
+  margin: auto;
+}
+
+#logo h1 {
+  font-size: 100pt;
+}
+
+main {
+  max-height: 50000px;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-areas:
+  "sideBtns comic"
+  "article"
+  "footer";
+}
+
+#sideBtns {
+  grid-area: 'sideBtns';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#comicBox {
+  grid-area: 'comic';
+  background-color: rgb(42,27,61);
+}
+
+#comic {
+  border: solid 10px rgb(42,27,61);
+}
+
+#btns {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+article {
+  background-color: rgb(42,27,61);
+  grid-area: 'article';
+  grid-column: 2/3;
+  padding: 10px;
+  max-width: 1000px;
+}
+
+select {
+  padding: 3px;
+}
+
+
+.entry {
+  padding: 10px;
+  border-right: solid 8px rgba(89,202,215,.3);
+  border-bottom: solid 8px rgba(89,202,215,.3);
+}
+
+.book {
+  text-align: right;
+  position: relative;
+  height: 500px;
+  border: 5px solid #44318D;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  transition: .5s ease-in-out;
+  z-index: 10;
+}
+
+.overlay:hover {
+  opacity: 0;
+}
+
+.book select {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+.bookTitle {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20pt;
+}
+
+#book1 {
+  background-image: url(../images/001.png);
+  background-position: center;
+  background-size: 1000px;
+}
+
+#book2 {
+  background-image: url(../images/011.png);
+  background-size: 1000px;
+}
+
+#book3 {
+  background-image: url(../images/022.png);
+  background-size: 1000px;
+}
+
+
+footer {
+  grid-area: 'footer';
+  width: 100%;
+  height: 80px;
+  position: relative;
+  grid-column: 2/3;
+  }
+
+
+  #bottomNav {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    z-index: 101;
+  }
+
+  #bottomNav li{
+    /* opacity: 1; */
+    display: none;
+  }
+
+  #bottomNav li a {
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    z-index: 110;
+    color: rgba(216,63,135,.6);
+    padding: 0 10px;
+    border: solid 2px rgba(216,63,135,.6);
+    border-radius: 20%;
+    animation: neon 1s ease-in-out infinite alternate;
+
+  }
+
+  /* positioning the nav buttons */
+  #newsBottom {
+    top: -40px;
+    left: 370px;
+    transform: rotate(-5deg);
+  }
+
+  #archBottom {
+    top: -40px;
+    left: 490px;
+    transform: rotate(3deg);
+  }
+
+  #shopBottom {
+    top: -10px;
+    left: 260px;
+    transform: rotate(-13deg);
+  }
+
+  #aboutBottom {
+   top: -18px;
+   left: 650px;
+   transform: rotate(18deg);
+  }
+
+  #creBottom {
+    top: 50px;
+    left: 100px;
+    transform: rotate(-30deg);
+  }
+
+  #conBottom {
+    top: 50px;
+    left: 770px;
+    transform: rotate(30deg);
+  }
+
+
+
+#eye2 {
+  position: absolute;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  z-index: 5;
+  transition:all .5s ease-in-out;
+}
+
+#eye2a {
+  position: absolute;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  transition:all .5s ease-in-out;
+}
+
+
+#bottomHover:hover #eye2 {
+  opacity: 0;
+  transform: translateY(-110px);
+}
+
+
+#bottomHover:hover #eye2a {
+  transform: translateY(-110px);
+}
+
+#bottomHover:hover #bottomNav {
+  opacity: 1;
+  height: 200px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+
+#bottomHover:hover #bottomNav li{
+  display: block;
+}
+
+/* ##################### SHOP STYLES ##################*/
+#cartBox {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  height: 100px;
+  width: 100px;
+}
+
+#cartBox span {
+  text-decoration: none;
+  color: rgb(164,179,182);
+  font-size: 20pt;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#cartIcon {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.mainShop {
+  max-height: 50000px;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-areas:
+  "sideBtns comic"
+  "footer";
+}
+
+#shopBox {
+  grid-area: 'comic';
+  background-color: rgb(42,27,61);
+}
+
+.shop {
+  text-align: right;
+  display: grid;
+  grid-template-columns: 620px auto;
+  margin-bottom: 50px;
+}
+
+.shop ul {
+  margin: 30px 0;
+}
+
+.shop li {
+  padding: 5px 0px;
+}
+
+.shopLeft {
+  padding: 10px 10px 10px 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+.shopRight {
+  position: relative;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.cartFinal{
+  text-align: right;
+  display: grid;
+  grid-template-columns: 620px auto;
+  margin-bottom: 50px;
+}
+
+#dispCart {
+  width: 70%;
+  text-align: left;
+}
+
+#modBox {
+  overflow: auto;
+  display: none;
+  z-index: 100000;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  background-color: rgb(42,27,61)
+  height: 50vh;
+  width: 50vw;
+  flex-direction: column;
+  justify-content: center;
+  border-right: solid 8px rgba(89,202,215,.5);
+  border-bottom: solid 8px rgba(89,202,215,.5);
+}
+
+#modOver {
+  z-index: 99999;
+  display: none;
+  background-color: rgba(0, 0, 0, .7);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* temporary measure until mulitple image functionality is sorted out */
+.hoodie {
+  width: 300px;
+  height: 300px;
+}
+
+/* The code to allow multiple images and their thumbnails. to be implemented at a later date
+.shopThumb {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 100%;
+}
+
+.shopThumb img {
+  height: 100px;
+} */
+
+
+/* ######################## ABOUT STYLES ############################# */
+
+.mainAbout {
+  max-height: 50000px;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-areas:
+  "sideBtns comic"
+  "footer";
+}
+
+.about {
+  /* background: url('../images/otoxa_concept.png'); */
+  background-color: rgb(42,27,61);
+  position: relative;
+}
+
+.about h1{
+  position: absolute;
+  font-size: 40pt;
+  top: 30px;
+  right: 50%;
+  transform: translateX(50%)
+}
+
+/* ################## CREATORS STYLE ################## */
+
+.mainCreators {
+  max-height: 50000px;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-areas:
+  "sideBtns article"
+  "footer";
+}
+
+.creators{
+  background-color: rgb(42,27,61);
+  padding: 10px;
+  text-align: right;
+}
+
+.creators img {
+  padding-bottom: 10px;
+}
+
+.bigPic {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.smallPic {
+  width: 500px;
+    float: left;
+}
+
+/* ############################# CONTACT STYLE ######################### */
+.contactForm {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto 30px auto ;
+}
+
+select {
+padding: 10px;
+font-size: 12pt;
+outline: 0;
+font-family: 'Quattrocento';
+border: 0;
+margin: 3px;
+}
+
+#input-submit {
+  color: white;
+  background: rgb(89,202,215);
+}
+
+textarea {
+  height: 200px;
+  width: 100%;
+  resize: none;
+}
+
+.contactHalf {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.contactRight {
+  width: 50%;
+}
+
+.contactLeft {
+  margin-right: 2%;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/* ############################# NEWS STYLE############################# */
+.mainNews {
+  max-height: 50000px;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-areas:
+  "sideBtns news"
+  "footer";
+}
+
+#newsBox {
+  grid-area: 'news';
+  background-color: rgb(42,27,61);
+  display: flex;
+}
+
+.blog{
+  flex: 1;
+}
+
+#scehdule {
+  max-width: 160px;
+  padding:5px;
+}
+
+#eventList {
+  max-width: 160px;
+  padding:5px;
+}
+
+.calendar {
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  margin: 0 auto;
+}

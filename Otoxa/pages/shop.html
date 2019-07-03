@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Otoxa Swag</title>
+   <script src="../js/shop.js" charset="utf-8"></script>
+   <link rel="stylesheet" href="../css/main.css">
+ </head>
+ <body>
+   <header>
+    <nav id="topHover">
+      <a href="../index.html">
+       <img src="../images/eye200_8.png" alt="The Eye" id="eye1a">
+       <img src="../images/eye200.png" alt="The Eye" id="eye1">
+      </a>
+      <ul id="topNav">
+        <li><a id="newsTop" href="news.html">News</a></li>
+        <li><a id="archTop" href="archive.html">Archive</a></li>
+        <li><a id="shopTop" href="shop.html">Shop</a></li>
+        <li><a id="aboutTop" href="about.html">About</a></li>
+        <li><a id="creTop" href="creators.html">Creators</a></li>
+        <li><a id="conTop" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="logo">
+        <h1>OTOXA</h1>
+        <h2>Eye of the Universe</h2>
+    </div>
+    <a href="#gotocart">
+      <div id="cartBox">
+        <span id="cartCount"></span>
+        <img src="../images/cart.png" alt="Cart" id="cartIcon">
+      </div>
+    </a>
+   </header>
+   <main class="mainShop">
+     <aside id="sideBtns">
+       <ul>
+         <li><a href="https://facebook.com/HayganComics/"><img src="../images/facebook-logo.png" alt="Facebook"></a></li>
+         <li><a href="http://www.twitter.com/haygancomics"><img src="../images/twitter-logo.png" alt="Twitter"></a></li>
+         <li><a href="https://www.patreon.com/HayganComics"><img src="../images/patreon-logo.png" alt="Patreon"></a></li>
+         <li><a href="https://www.instagram.com/haygancomics/"><img src="../images/instagram-logo.png"alt="Instagram"></a></li>
+       </ul>
+     </aside>
+      <div id="shopBox">
+        <div class="shop">
+          <div class="shopLeft">
+            <img src="../images/birdposter.png" alt="Otoxa and the Bird">
+          </div>
+          <div class="shopRight">
+            <h3>$19.99</h3>
+            <h1>Otoxa and the Bird Poster</h1>
+            <ul>
+              <li>24" x 36"</li>
+              <li>Signed by the Artist</li>
+              <li>Ships rolled in sturdy cardboard tube</li>
+            </ul>
+            <button name="addItem" onclick="addItem('p1')">Add To Cart</button>
+            <form action="#gotocart" method="post">
+              <input type="submit" value="Go To Cart">
+            </form>
+          </div>
+        </div>
+
+        <div class="shop">
+          <div class="shopLeft">
+            <img src="../images/hoodiefront.png" alt="Hoodie, Front" class="hoodie">
+            <img src="../images/hoodieback.png" alt="Hoodie, Back" class="hoodie">
+          </div>
+          <div class="shopRight">
+            <h3>$44.99</h3>
+            <h1>Eye and Sword Hoodie</h1>
+            <ul>
+              <li>100% cotton</li>
+              <li>Machine wash</li>
+              <li>Pill-resistant fabric</li>
+            </ul>
+            <button name="addItem" onclick="addItem('p2')">Add To Cart</button>
+            <form action="#gotocart" method="post">
+              <input type="submit" value="Go To Cart">
+            </form>
+
+            <!-- time permitting, this will be a button that allows you to switch back and forth between the images, and the two hoodie pics will be converted to one -->
+            <!-- <div class="shopThumb">
+              <img src="../images/hoodiefront.png" alt="Hoodie, Front" onhover="hoodieSwitch()">
+              <img src="../images/hoodieback.png" alt="Hoodie, Back" onhover="hoodieSwitch()">
+            </div> -->
+          </div>
+        </div>
+
+        <div class="shop">
+          <div class="shopLeft">
+            <img src="../images/watercolorposter.jpg" alt="Otoxa Watercolor">
+          </div>
+          <div class="shopRight">
+            <h3>$19.99</h3>
+            <h1>Otoxa Watercolor Poster</h1>
+            <ul>
+              <li>24" x 36"</li>
+              <li>Signed by the Artist</li>
+              <li>Ships rolled in sturdy cardboard tube</li>
+            </ul>
+            <button name="addItem" onclick="addItem('p3')">Add To Cart</button>
+            <form action="#gotocart" method="post">
+              <input type="submit" value="Go To Cart">
+            </form>
+          </div>
+        </div>
+
+        <div class="shop">
+          <div class="shopLeft">
+            <img src="../images/pin.png" alt="Eye Pin">
+
+          </div>
+          <div class="shopRight">
+            <h3>$9.99</h3>
+            <h1>Eye Pin</h1>
+            <ul>
+              <li>1" x 1"</li>
+              <li>Die struck and nickel plated</li>
+              <li>Dual back pins for stability</li>
+            </ul>
+            <button name="addItem" onclick="addItem('p4')">Add To Cart</button>
+            <form action="#gotocart" method="post">
+              <input type="submit" value="Go To Cart">
+            </form>
+          </div>
+        </div>
+
+        <div class="shop">
+          <div class="shopLeft">
+            <img src="../images/phone.png" alt="Cave Stream Phone Case">
+          </div>
+          <div class="shopRight">
+            <h3>$14.99</h3>
+            <h1>Cave Stream Phone Case</h1>
+            <ul>
+              <li>Lightweight plastic</li>
+              <li>Soft, grippy edge</li>
+              <li>Amazingly fits every phone</li>
+            </ul>
+            <button name="addItem" onclick="addItem('p5')">Add To Cart</button>
+            <form action="#gotocart" method="post">
+              <input type="submit" value="Go To Cart">
+            </form>
+          </div>
+        </div>
+        <div class="cartFinal">
+          <div class="shopLeft">
+            <a name="gotocart"></a>
+              <ul id="dispCart">
+
+              </ul>
+          </div>
+          <div class="shopRight">
+            <button type="button" name="checkout" onclick="showCheckout()">Check Out</button>
+          </div>
+        </div>
+
+      </div>
+      <footer>
+        <nav id="bottomHover">
+          <a href="../index.html">
+            <img class="hover" src="../images/eye200.png" alt="The Eye" id="eye2">
+            <img class="hover" src="../images/eye200_8.png" alt="The Eye" id="eye2a">
+          </a>
+          <ul class="hover" id="bottomNav">
+            <li><a class="hover" id="newsBottom" href="news.html">News</a></li>
+            <li><a class="hover" id="archBottom" href="archive.html">Archive</a></li>
+            <li><a class="hover" id="shopBottom" href="shop.html">Shop</a></li>
+            <li><a class="hover" id="aboutBottom" href="about.html">About</a></li>
+            <li><a class="hover" id="creBottom" href="creators.html">Creators</a></li>
+            <li><a class="hover" id="conBottom" href="contact.html">Contact</a></li>
+          </ul>
+      </footer>
+    </main>
+
+    <div id="modBox">
+      <div>
+        <h1>Your Total: </h1>
+        <h2 id="modTotal"></h2>
+        <p>Jk, it's free!</p>
+      </div>
+    </div>
+    <div id="modOver" onclick="closeMod()">
+    </div>
+
+    <script type="text/javascript">
+    window.onload = initCart();
+      window.onload = popCheck();
+    </script>
+ </body>
+</html>
