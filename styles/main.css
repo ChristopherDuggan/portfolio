@@ -41,7 +41,7 @@ h3 {
   padding: 30px 0;
   margin-bottom: 5px;
   border-bottom: 2px solid;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 
 .logo h1{
@@ -77,10 +77,16 @@ p {
 .nav-li {
   padding: 10px;
   font-size: 1.5rem;
+  border-left: 3px solid rgba(0, 0, 0, 0);
   color: #eee;
+  transition: all 0.3s linear;
 }
 
 .nav-li:hover {
+  border-left: 3px solid;
+}
+
+.nav-highlight {
   border-left: 3px solid;
 }
 
@@ -127,7 +133,7 @@ p {
   max-width: 1000px;
   margin: 40px auto;
   padding: 10px;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 
 .card-border {
@@ -216,7 +222,8 @@ section h1 {
   height: 200px;
   padding: 20px 0;
   margin: 10px 20px;
-  border: solid 1px;
+  border: solid 2px;
+  transition: all 0.3s linear;
 }
 
 .skill-icon {
