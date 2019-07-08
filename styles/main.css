@@ -40,7 +40,7 @@ h3 {
 .logo {
   padding: 30px 0;
   margin-bottom: 5px;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   transition: all 0.5s linear;
 }
 
@@ -85,31 +85,31 @@ p {
 }
 
 .red {
-  color: rgba(255, 0, 0, 0.6);
+  color: rgba(255, 0, 0, 0.8);
 }
 
 .orange {
-  color: rgba(255, 165, 0, 0.6);
+  color: rgba(255, 165, 0, 0.8);
 }
 
 .yellow {
-  color: rgba(255, 255, 0, 0.6);
+  color: rgba(255, 255, 0, 0.8);
 }
 
 .green {
-  color: rgba(0, 128, 0, 0.6);
+  color: rgba(0, 128, 0, 0.8);
 }
 
 .blue {
-  color: rgba(0, 0, 255, 0.6);
+  color: rgba(0, 0, 255, 0.8);
 }
 
 .purple {
-  color: rgba(128, 0, 128, 0.6);
+  color: rgba(128, 0, 128, 0.8);
 }
 
 .white {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .background {
@@ -127,7 +127,11 @@ p {
   max-width: 1000px;
   margin: 40px auto;
   padding: 10px;
-  border: solid black 1px;
+  transition: all 0.5s linear;
+}
+
+.card-border {
+  border: solid 2px;
 }
 
 .card p {
@@ -135,7 +139,7 @@ p {
 }
 
 .card-header {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid;
   margin: 0 20px;
   display: flex;
   justify-content: space-between;
@@ -145,7 +149,7 @@ p {
 }
 
 .project-card-header {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid;
   margin: 0 20px;
   display: flex;
   justify-content: center;
@@ -212,7 +216,7 @@ section h1 {
   height: 200px;
   padding: 20px 0;
   margin: 10px 20px;
-  border: solid 1px black;
+  border: solid 1px;
 }
 
 .skill-icon {
@@ -234,7 +238,7 @@ section h1 {
 }
 
 #about h1 {
-  background: rgba(255, 0, 0, 0.6);
+  background: rgba(255, 0, 0, 0.8);
 }
 
 #about p {
@@ -245,23 +249,23 @@ section h1 {
 
 
 #experience h1 {
-  background:  rgba(255, 165, 0, 0.6);
+  background:  rgba(255, 165, 0, 0.8);
 }
 
 #projects h1 {
-  background: rgba(255, 255, 0, 0.6);
+  background: rgba(255, 255, 0, 0.8);
 }
 
 #skills h1 {
-  background: rgba(0, 128, 0, 0.6);
+  background: rgba(0, 128, 0, 0.8);
 }
 
 #education h1 {
-  background: rgba(0, 0, 255, 0.6);
+  background: rgba(0, 0, 255, 0.8);
 }
 
 #contact h1 {
-  background: rgba(128, 0, 128, 0.6);
+  background: rgba(128, 0, 128, 0.8);
 }
 
 #mtg-logo {
