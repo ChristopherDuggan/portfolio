@@ -17,8 +17,8 @@ ul {
 }
 
 nav {
-  background-color: #252122;
-  color: #eee;
+  background-color: #282828;
+  color: #a89984;
   padding: 15px;
   height: 100%;
   min-width: 240px;
@@ -27,7 +27,7 @@ nav {
 }
 
 nav a {
-  color: #eee;
+  color: #d5c4a1;
 }
 
 h1 {
@@ -54,7 +54,7 @@ h3 {
 }
 
 main {
-  padding-left: 240px;
+  padding-left: 300px;
 }
 
 h2 {

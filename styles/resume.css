@@ -8,7 +8,6 @@
 
 body {
   background-color: white;
-  height: 100vh;
   display: flex;
 }
 
@@ -16,16 +15,29 @@ ul {
   list-style: none;
 }
 
-li {
-  padding: 0 10px;
-}
-
 aside {
-  background-color: #3A3335;
+  background-color: #282828;
   color: #eee;
   padding: 15px;
-  height: 100%;
-  width: 240px;
+  width: 300px;
+  font-size: 18px;
+}
+
+h1 {
+  margin: 0 0 1em 0;
+}
+
+aside img {
+  height: 1em;
+  float: left;
+  margin-right: 5px;
+}
+
+aside li {
+  clear: left;
+}
+aside p {
+  margin: 0 0 2em 0;
 }
 
 aside a {
@@ -47,12 +59,12 @@ h3 {
 
 hr {
   border-color: #DB3A34;
-  margin: 10px 0;
+  margin: 10px 0 1em 0;
 }
 
 main {
   padding: 0 20px;
-  width: 610px;
+  width: 60%;
   height: 100%;
 }
 
@@ -83,8 +95,12 @@ main h3 {
   margin-top: 10px;
 }
 
-.back {
-  font-size: 32px;
-  position: absolute;
-  bottom: 20px;
+.experience-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  margin-top: 10px;
+  text-align: right;
 }
