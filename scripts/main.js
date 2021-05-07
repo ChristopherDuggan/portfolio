@@ -21,7 +21,6 @@ const changeColor = () => {
     .getBoundingClientRect().top;
 
   if (experience > windowHeight/2) {
-    //logo.classList = 'logo red';
     for (let i = 0; i < logo.length; i++) {
       logo[i].classList='logo red'
     }
@@ -35,7 +34,6 @@ const changeColor = () => {
       card[i].style.borderColor="rgba(255, 0, 0, 0.8)";
     }
   } else if (projects > windowHeight/2) {
-    //logo.classList = 'logo orange';
     for (let i = 0; i < logo.length; i++) {
       logo[i].classList='logo orange'
     }
@@ -49,7 +47,6 @@ const changeColor = () => {
       card[i].style.borderColor="rgba(255, 165, 0, 0.8)";
     }
   } else if (skills > windowHeight/2) {
-    //logo.classList = 'logo yellow';
     for (let i = 0; i < logo.length; i++) {
       logo[i].classList='logo yellow'
     }
@@ -65,7 +62,6 @@ const changeColor = () => {
   }
 
   else if (education > windowHeight/2) {
-    //logo.classList = 'logo green';
     for (let i = 0; i < logo.length; i++) {
       logo[i].classList='logo green'
     }
@@ -81,7 +77,6 @@ const changeColor = () => {
   }
 
   else if (contact > windowHeight/2) {
-    //logo.classList = 'logo blue';
     for (let i = 0; i < logo.length; i++) {
       logo[i].classList='logo blue'
     }
@@ -97,7 +92,6 @@ const changeColor = () => {
   }
 
   else {
-    //logo.classList = 'logo purple';
     for (let i = 0; i < logo.length; i++) {
       logo[i].classList='logo purple'
     }
